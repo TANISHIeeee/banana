@@ -6,13 +6,16 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", "Noto Sans JP", Arial, sans-serif;
 }
 
 /* ===== ヘッダー ===== */
 .site-header {
   position: relative;
+  background-image: url("/images/header.png");
   background-color: #def7ff;
+  background-size: cover;
+  background-position: center;
 }
 
 .site-header__wrapper {
@@ -32,13 +35,15 @@ body {
 
 /* ===== ブランド ===== */
 .brand {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* ===== ナビ ===== */
 .nav__wrapper {
-  list-style: none;   /* ●を消す */
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -53,12 +58,14 @@ body {
 .nav__item a {
   display: block;
   padding: 1.5rem 1rem;
-  text-decoration: none;
-  color: #5a2ca0;
+  text-decoration: none;   /* 下線なし */
+  color: #ffffff;          /* 白文字 */
+  font-weight: 500;
 }
 
 .nav__item a:hover {
-  text-decoration: underline;
+  text-decoration: none;   /* hoverでも下線なし */
+  opacity: 0.8;
 }
 
 /* ===== スマホ用 ===== */
@@ -68,7 +75,7 @@ body {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #d9f0f7;
+    background-color: rgba(0, 0, 0, 0.6);
     visibility: hidden;
     opacity: 0;
     transform: translateY(-10px);
@@ -97,6 +104,7 @@ body {
     background: none;
     border: none;
     font-size: 24px;
+    color: #ffffff;
     cursor: pointer;
   }
 }
